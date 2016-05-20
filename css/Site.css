@@ -202,6 +202,16 @@ nav ul li a {
 	font-weight: 600;
 }
 
+
+.notice {
+	position: relative;
+	text-align: center;
+	padding: 25px;
+	max-width: 600px;
+	margin: 0 auto;
+	line-height: 24px;
+}
+
 [type='submit'] {
 	-webkit-appearance: none;
 	background-color: #8BC34A;

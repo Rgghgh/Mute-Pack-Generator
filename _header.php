@@ -1,6 +1,6 @@
 <?php 
 include 'includes/database.php';
-include 'includes/user.php';
+
 session_start();
 ?>
 <!DOCTYPE html>
@@ -26,18 +26,9 @@ session_start();
 		</header>
 		
 		<nav>
-			<!-- 
-			<div id="user">
-				<?php 	
-				#if(!isset($_SESSION['user'])) : $_SESSION['user'] = new User(); endif;
-				#	echo $_SESSION['user']->info();
-				?>
-			</div>
-			 -->
-		
 			<ul>
 				<li><a href="index.php">Home - Generator</a></li>
-				<li><a href="import.php">Import [Soon]</a></li>
+				<li><a href="#">Import [Soon]</a></li>
 				<li><a href="index.php?t=true">Tutorial</a></li>
 				<li><a href="stats.php">Statistics</a></li>
 				<li><a href="http://mcping.rgghgh.com" target="_blank">Server Pinger</a></li>

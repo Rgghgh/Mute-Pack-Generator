@@ -2,7 +2,7 @@
 An Online Tool to generate custom resource packs that mute selected sounds in vanilla minecraft. 
 The end to the annoying Nether portal and Villager sounds!
 
-<b>As of Minecraft 1.9, the app is broken. You are more than welcome to contribute and help make the app work again.</b>
+<b>Now Works with minecraft 1.9!</b>
 
 #### What is this? 
 Mute Pack Generator generates a custom resource pack that mutes the sound of the things you select to mute. All in vanilla Minecraft!

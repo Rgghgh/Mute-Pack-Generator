@@ -2,10 +2,10 @@
 
 class Database
 {
-	const SERVER_NAME = "************"; // 'localhost'
-	const DATABASE_NAME = "***********"; // 'mpg'
-	const USERNAME = "***********"; // 'root'
-	const PASSWORD = "***********"; // ''
+	const SERVER_NAME = "localhost"; // 'localhost'
+	const DATABASE_NAME = "mpg"; // 'mpg'
+	const USERNAME = "root"; // 'root'
+	const PASSWORD = ""; // ''
 	private $conn;
 	private static $tables = array (
 			'stats' => "id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,

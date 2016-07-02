@@ -45,6 +45,7 @@ body {
     font-family: Roboto;
     background-color: #eee;
     overflow-x: hidden;
+    margin: 0;
 }
 
 ul {
@@ -314,6 +315,45 @@ form {
 
 .card p {
     padding: 0px 35px;
+}
+
+/* SHARE BAR */
+
+#shareBar {
+    background-color: #FFEB3B;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.53);
+    text-align: center;
+    width: 100vw;
+    height: 50px;
+    padding: 25px;
+}
+
+.shareLink {
+    width: 32px;
+    height: 32px;
+    margin: 15px 5px 0px;
+    display: inline-block;
+    background-size: cover;
+}
+
+#twitter {
+    background-image: url("../res/twitter.png");
+}
+
+#facebook {
+    background-image: url("../res/facebook.png");
+}
+
+#whatsapp {
+    background-image: url("../res/whatsapp.png");
+}
+
+#reddit {
+    background-image: url("../res/reddit.png");
+}
+
+#googleplus {
+    background-image: url("../res/googleplus.png");
 }
 
 /* OPTIONS */

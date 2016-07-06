@@ -20,7 +20,7 @@
 	<div id="shareBar">
 		<b>Found this useful?</b> Help others and share!<br>
 
-		<a class="shareLink" target="_blank" id="twitter" href="https://twitter.com/intent/tweet?text=Check out this tool that generates custom resource packs to mute chosen sounds in vanilla Minecraft! http://mc.rgghgh.com/"></a>
+		<a class="shareLink" target="_blank" id="twitter" href="https://twitter.com/intent/tweet?text=Check out this tool that generates custom resource packs to mute chosen sounds in vanilla Minecraft! http://mc.rgghgh.com/ #muteminecraft"></a>
 		<a class="shareLink" target="_blank" id="facebook" href="https://www.facebook.com/sharer.php?s=100&p[title]=Mute%20Pack%20Generator&p[url]=http://mc.rgghgh.com"></a>
 		<a class="shareLink" id="whatsapp" href="whatsapp://send?text=Check out this tool that generates custom resource packs to mute chosen sounds in vanilla Minecraft! http://mc.rgghgh.com/" data-action="share/whatsapp/share"></a>
 		<a class="shareLink" target="_blank" id="reddit" href="https://reddit.com/submit?url=http://mc.rgghgh.com&title=Mute Pack Generator for vanilla Minecraft!"></a>

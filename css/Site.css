@@ -503,6 +503,10 @@ form {
     max-width: 300px !important;
 }
 
+.milestone {
+    max-width: 440px !important;
+}
+
 [type=text], [type=password] {
     -webkit-appearance: none;
     border: none;

@@ -10,6 +10,9 @@
 <div class="card">
 	<h3>Total Packs Generated</h3>
 		<h1 class="center"><?php echo $total; ?></h1>
+
+		<h4>Milestones:</h4>
+		<?php echo $milestones; ?>
 </div>
 
 <div class="card">

@@ -7,7 +7,7 @@ if ($_SERVER ['REQUEST_METHOD'] == "POST") {
         die();
     }
 
-    $files = $_POST ['c'];
+    $files = $_POST['c'];
     $version = $_POST['submit'];
 
     $zip = new ZipArchive();
@@ -43,5 +43,13 @@ if ($_SERVER ['REQUEST_METHOD'] == "POST") {
 
     $db = new Database();
     $db->updateStats($files);
+
+    $milestone = $db->checkMilestone();
+    if ($milestone) {
+        $db->setMilestone($milestone, null);
+        $_SESSION['milestone'] = $milestone;
+        header('Location: milestone.php');
+    }
+
     $db->end();
 }

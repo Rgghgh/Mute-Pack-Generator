@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'includes/database.php';
 
 session_start();
@@ -15,16 +15,16 @@ session_start();
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="text/javascript" src="js/jQuery.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-		<link href="css/Site.css" rel="stylesheet" type="text/css" />	
+		<link href="css/Site.css" rel="stylesheet" type="text/css" />
 		<?php if( isset($incHead) ) : echo $incHead; endif;?>
 	</head>
 	<body>
-		
+
 		<header>
 			<div id="navButton"></div>
 			<p>Mute Pack Generator - <?php echo $tittle; ?></p>
 		</header>
-		
+
 		<nav>
 			<ul>
 				<li><a href="index.php">Home - Generator</a></li>
@@ -35,9 +35,9 @@ session_start();
 				<br><br>
 				<li><a href="about.php">About</a></li>
 				<li><a href="contact.php">Contact and Feedback</a></li>
-				<li><a href="contact.php?t=br">Bug Reports</a></li>				
+				<li><a href="contact.php?t=br">Bug Reports</a></li>
 			</ul>
 		</nav>
 		<div id="navShade"></div>
-		
+
 		<section id="content">

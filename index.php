@@ -4,8 +4,7 @@
 <?php if (! isset ( $_COOKIE ['first'] ) || isset($_GET['t']) ) : include '_tutorial.php'; endif; ?>
 
 <?php     
-    $milestone = $db->checkMilestone();
-    if ($milestone)
+    if (isset($_SESSION['milestone']))
         header('Location: milestone.php');
 ?>
 

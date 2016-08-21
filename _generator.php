@@ -48,7 +48,6 @@ if ($_SERVER ['REQUEST_METHOD'] == "POST") {
     if ($milestone) {
         $db->setMilestone($milestone, null);
         $_SESSION['milestone'] = $milestone;
-        header('Location: milestone.php');
     }
 
     $db->end();

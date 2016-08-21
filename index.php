@@ -3,6 +3,12 @@
 
 <?php if (! isset ( $_COOKIE ['first'] ) || isset($_GET['t']) ) : include '_tutorial.php'; endif; ?>
 
+<?php     
+    $milestone = $db->checkMilestone();
+    if ($milestone)
+        header('Location: milestone.php');
+?>
+
 <form method="post" onsubmit="return valGen();" action="_generator.php">
 
 	<?php

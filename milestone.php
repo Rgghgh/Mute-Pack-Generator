@@ -2,8 +2,8 @@
 <?php include '_header.php'; ?>
 
 <?php
-$milestone = $_SESSION['milestone'];
-if ($milestone == null) {
+$milestone = isset($_SESSION['milestone']) ? $_SESSION['milestone'] : false;
+if ($milestone === false) {
     header('Location: index.php');
     die();
 }

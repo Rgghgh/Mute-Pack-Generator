@@ -17,7 +17,7 @@
 	<input type="hidden" name="token" value="<?php echo $token; ?>" />
 	<div class="err"></div>
 	<?php include '_options.php'; ?>
-	<input name="submit" type="submit" value="1.9" />
+	<input name="submit" type="submit" value="1.9" onclick="setTimeout(function() {location.reload()}, 1000)" />
 	<div id="old-version" class="hide">or click <span class="highlight">here</span> for pre 1.9</div>
 </form>
 

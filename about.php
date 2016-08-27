@@ -26,6 +26,7 @@
 		<a href="https://minecraft.net/" target="_blank">Minecraft</a> by Mojang AB,<br />
 		<a href="https://www.google.com/design/icons/" target="_blank">Material Design</a> - Icons, <br />
 		<a href="http://morrisjs.github.io/morris.js/" target="_blank">Morris JS</a> - Statistics Charts, <br />
+		<a href="https://crafatar.com/" target="_blank">Crafatar</a> - Minecraft skin API, <br />
 		<br>App Created by Rgghgh.<br />
 	</p>
 

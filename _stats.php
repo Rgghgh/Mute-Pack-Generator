@@ -14,12 +14,31 @@ $sql = "SELECT milestone,time,name FROM milestones";
 $res = $db->query($sql);
 $milestones = "";
 while ($val = $res->fetch_array(MYSQLI_BOTH)) {
-    if ($val['time'])
-        $milestones .= "<li><span class='err'>" . $val ['milestone'] . "</span> - " . ($val ['name'] ? $val ['name'] : 'anonymous') . ' (' . $val ['time'] . ")</li>";
-    else
-        $milestones .= "<li><span class='err'>" . $val ['milestone'] . "</span> - <i>next milestone...</i></li>";
-}
 
+    $milestone = $val['milestone'];
+    $name = $val ['name'] ? $val ['name'] : 'anonymous';
+    $date = $val ['time'] ? $val ['time'] : 'next milestone...';
+
+    if ($val['time'])
+        $milestones .= <<< END
+        <div class="milestone-breaker">
+            <div class="milestone-name">$name</div>
+              
+            <img src="https://crafatar.com/renders/head/$name"/>
+
+            <div class="milestone-val">$milestone</div>
+            <div class="milestone-date">$date</div>
+        </div>
+END;
+
+    else
+        $milestones .= <<< END
+        <div class="milestone-breaker">
+            <div class="milestone-val">$milestone</div>
+            <div class="milestone-date">$date</div>
+        </div>
+END;
+}
 
 // g1 - Top Sounds
 

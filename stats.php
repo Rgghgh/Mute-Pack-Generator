@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$tittle = "Statistics";
 	$incHead = '<link rel="stylesheet" href="js/morris.css">
 				<script type="text/javascript" src="js/raphael.js"></script>
@@ -12,7 +12,7 @@
 		<h1 class="center"><?php echo $total; ?></h1>
 
 		<h4>Milestones:</h4>
-		<?php echo $milestones; ?>
+        <?php echo $milestones; ?>
 </div>
 
 <div class="card">

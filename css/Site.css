@@ -317,6 +317,48 @@ form {
     padding: 0px 35px;
 }
 
+/* MILESTONES */
+
+.milestone-breaker {
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.milestone-breaker:first-of-type {
+    margin-left: 0px;
+}
+
+.milestone-name {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14pt;
+    padding: 10px;
+}
+
+.milestone-val {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20pt;
+    padding: 10px;
+    color: #303F9F;
+}
+
+.milestone-date {
+    font-style: italic;
+    color: #666666;
+}
+
+#confetti {
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+}
+
 /* SHARE BAR */
 
 #shareBar {

@@ -1,4 +1,5 @@
 <?php
+include 'includes/database.php';
 session_start();
 if ($_SERVER ['REQUEST_METHOD'] == "POST") {
 		
@@ -17,5 +18,3 @@ if ($_SERVER ['REQUEST_METHOD'] == "POST") {
 }
 
 header("Location: index.php");
-
-?>

@@ -8,6 +8,10 @@ if ($_SERVER ['REQUEST_METHOD'] == "POST") {
 		$content = $_POST['content'];
 	
 		$msg = $content;
+
+		$db = new Database();
+		$db->contactMessage($name, $type, $email, $content);
+
 		mail("mpg@rgghgh.com","MPG - $type FROM $name - $email", $msg);
 		
 }

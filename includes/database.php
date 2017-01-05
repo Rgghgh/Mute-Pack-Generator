@@ -15,7 +15,13 @@ class Database
 						count BIGINT(20) NOT NULL DEFAULT 0",
         'milestones' => "milestone BIGINT(20) NOT NULL UNIQUE PRIMARY KEY,
 						time DATETIME DEFAULT NULL,
-						name LONGTEXT DEFAULT NULL"
+						name LONGTEXT DEFAULT NULL",
+        'contact' => "id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+						name VARCHAR(255),
+						type VARCHAR(10),
+						email VARCHAR(255),
+						content TEXT,
+						time DATETIME"
     );
 
     function __construct()
@@ -33,6 +39,10 @@ class Database
         $sql = "CREATE TABLE IF NOT EXISTS milestones (" . Database::$tables ['milestones'] . ");";
         if ($this->conn->query($sql) === FALSE)
             die("Error creating table: " . $this->conn->error . "</br>");
+
+	    $sql = "CREATE TABLE IF NOT EXISTS contact (" . Database::$tables ['contact'] . ");";
+	    if ($this->conn->query($sql) === FALSE)
+		    die("Error creating table: " . $this->conn->error . "</br>");
 
         $sql = "SELECT COUNT(*) AS 'C' FROM stats;";
         $result = mysqli_fetch_assoc($this->conn->query($sql));
@@ -76,6 +86,15 @@ class Database
         $stmt->bind_param("si", $name, $milestone);
         $stmt->execute();
         $stmt->close();
+    }
+
+    public function contactMessage($name, $type, $email, $content)
+    {
+	    $sql = "INSERT INTO contact (name, type, email, content, time) VALUES (?, ?, ?, ?, NOW())";
+	    $stmt = $this->conn->prepare($sql);
+	    $stmt->bind_param("ssss", $name, $type, $email, $content);
+	    $stmt->execute();
+	    $stmt->close();
     }
 
     public function end()

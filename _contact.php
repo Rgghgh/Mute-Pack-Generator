@@ -1,8 +1,16 @@
 <?php
 include 'includes/database.php';
+include 'includes/capcha.php';
 session_start();
 if ($_SERVER ['REQUEST_METHOD'] == "POST") {
-		
+
+		$recapcha = $_POST['g-recaptcha-response'];
+
+		if (!Capcha::run($recapcha)) {
+			die("Capcha failed.");
+		}
+
+
 		$name = $_POST['name'];
 		$type = $_POST['type'];
 		$email = $_POST['email'];

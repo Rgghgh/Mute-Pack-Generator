@@ -1,5 +1,6 @@
 <?php
 	$tittle = "Contact";
+    $incHead = "<script src='https://www.google.com/recaptcha/api.js'></script>";
 	if (isset ( $_GET ['t'] )) : $tittle = "Bug Report"; endif;
 ?>
 
@@ -21,7 +22,7 @@
 	<input placeholder="Name" type="text" name="name" onblur="return validForm();">
 	<input placeholder="Email Adress" type="text" name="email" onblur="return validForm();">
 	<textarea placeholder="Message" name="content" onblur="return validForm();"></textarea>
-	
+    <div class="g-recaptcha" data-sitekey="6LfIhxIUAAAAADWkPE8iDKlzoj_RsH8Yep-7WpO3"></div>
 	<input type="submit" value=" " class="send">
 </div>
 </form>
